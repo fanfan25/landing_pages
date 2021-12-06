@@ -1,0 +1,72 @@
+/* StyleSheet for the Full Screen Landing page prject 11/23/2021 */
+/* font-family: 'Merriweather', serif; */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section#intro {
+	background-image: url("back.jpg");
+	background-size: cover ;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+
+div#content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
+div#content h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 600%;
+	color: white;
+	letter-spacing: 5px;
+	text-shadow: 2px 0px 10px black;
+	margin-bottom: 45px;
+}
+
+a#btn {
+	text-decoration:  none;
+	background-color: yellow;
+	color: black;
+	font-size: 250%;
+	padding: 10px 20px;
+	border-radius: 15px 15px 15px 15px;
+	border: solid orange 3px;
+	font-family: 'Merriweather', serif;
+	transition: all 1s;
+}
+
+a#btn:hover {
+	color: red;
+	border: solid white 3px;
+}
+
+p {
+	font-size: 120%;
+	text-align: justify;
+	margin: 10px;
+}
+
+
+/* Media Query styling */
+@media screen and  (max-width: 768px) {
+div#content h1 {
+	font-size:  400%;
+}
+
+a#btn {
+	font-size: 150%;
+}
+
+p {
+	display: none;
+}
+} /* end of media query */
